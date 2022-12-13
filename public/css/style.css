@@ -1,0 +1,50 @@
+textarea{
+    resize: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 90%;
+    background: url('/img/fond_formulaire.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form{
+    background-image: url('/img/btn_gedimat.png');
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 400px;
+    background-color: #838282;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 100px;
+}
+
+form {
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    width: 400px;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 100px;
+}
+
+label{
+    margin-top: 10px;
+    display: block;
+}
+
+label.inline{
+    display: inline;
+    margin-right: 70px
+}
+
+/*nput, textarea, select, option{
+    background-color: ;
+}*/
