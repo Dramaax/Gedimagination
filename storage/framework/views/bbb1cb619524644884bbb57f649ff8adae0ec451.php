@@ -51,4 +51,4 @@
             </form>
         </section>
     </body>
-</html>
+</html><?php /**PATH C:\laragon\www\FOUREL-YANNIS\Nouveau dossier\Gedimagination\resources\views/participation.blade.php ENDPATH**/ ?>
