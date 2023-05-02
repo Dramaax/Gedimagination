@@ -280,3 +280,11 @@ button.ghost {
     padding: 5px;
     float: left;
 }
+
+.img_accueil{
+    margin: auto;
+    display: flex;
+    position: absolute;
+    margin-bottom: 22%;
+    
+}

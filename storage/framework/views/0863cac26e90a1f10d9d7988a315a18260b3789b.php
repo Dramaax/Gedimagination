@@ -7,12 +7,12 @@
 </head>
 <body>
     <section class="contact-us" id="contact-section">
-        <form id="contact" action="<?php echo e(url('verif')); ?>" method="get">
-            <div class='welcome-page'>
-                <input type='submit' value="S'inscrire">
+        <div class="img_accueil">
+                <img src="img/btn_gedimat.png" alt=""/>
             </div>
+        <form action="<?php echo e(url('verif')); ?>" method="get">
             <div class='welcome-page'>
-                <input type='submit' value='participer'>
+                <input type='submit' value='Participer au jeu concours'>
             </div>
         </form>
     </section>
