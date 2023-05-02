@@ -7,13 +7,13 @@
 </head>
 <body>
     <section class="contact-us" id="contact-section">
-        <form id="contact" action="{{ url('verif')}}" method="get">
+        <form id="contact" action="<?php echo e(url('verif')); ?>" method="get">
             <div class='welcome-page'>
                 <input type='submit' value="S'inscrire">
             </div>
             <div class='welcome-page'>
-                <input type='submit' value='Participer au'>
+                <input type='submit' value='participer'>
             </div>
         </form>
     </section>
-</body>
+</body><?php /**PATH C:\laragon\www\Gedimagination\resources\views/accueil.blade.php ENDPATH**/ ?>
