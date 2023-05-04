@@ -13,7 +13,9 @@
     <body>
         <!-- Formulaire d'inscription -->
         <section class="contact-us" id="contact-section">
-            <form id="contact" action="" method="post">
+            <form id="contact" action="/verif" method="post">
+                <?php echo e(csrf_field()); ?>
+
             
                 <div class="section-heading">
                     <img src="img/btn_gedimat.png" alt=""/>
