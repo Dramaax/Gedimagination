@@ -152,6 +152,23 @@ textarea {
     transition: all .3s;
 }
 
+#form_submit2{
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #fff;
+    background: rgb(203, 12, 41);
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+}
 #form-submit:hover {
     background: rgb(177, 11, 36);
 }
@@ -276,6 +293,12 @@ button.ghost {
 }
 
 .welcome-page {
+    position: relative;
+    padding: 5px;
+    float: left;
+}
+
+.classement-page {
     position: relative;
     padding: 5px;
     float: left;

@@ -11,8 +11,8 @@
             <img src="img/btn_gedimat.png" alt=""/>
         </div>
     <form action="{{ url('verif')}}" method="get">
-        <div class='welcome-page'>
-            <input type='submit' id="form-submit" value='Participer au jeu concours'>
+        <div class="inputField btn">
+            <button type="submit" id="form-submit" class="main-gradient-button">Participer</button>
         </div>
     </form>
     <form action="{{ url('classement')}}" method="get">

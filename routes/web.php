@@ -22,6 +22,7 @@ Route::get('accueil', function () {
     return view('accueil');
 });
 
+Route::get('classement', [RealisationsController::class, 'classement']);
 Route::get('verif', [RealisationsController::class, 'verification']);
 Route::get('participation', [RealisationsController::class, 'create']);
 Route::post('participation', [RealisationsController::class, 'store']);
