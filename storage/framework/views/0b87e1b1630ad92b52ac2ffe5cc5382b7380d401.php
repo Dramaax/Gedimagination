@@ -13,7 +13,7 @@
     <body>
         <!-- Formulaire d'inscription -->
         <section class="contact-us" id="contact-section">
-            <form id="contact" action="/verif" method="post">
+            <form id="contact" action="<?php echo e(url('participation')); ?>" method="post" enctype="multipart/form-data">
                 <?php echo e(csrf_field()); ?>
 
             

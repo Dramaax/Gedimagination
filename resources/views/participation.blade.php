@@ -13,7 +13,7 @@
     <body>
         <!-- Formulaire d'inscription -->
         <section class="contact-us" id="contact-section">
-            <form id="contact" action="" method="post">
+            <form id="contact" action="{{ url('participation') }}" method="post" enctype="multipart/form-data">
                 {{ csrf_field() }}
             
                 <div class="section-heading">

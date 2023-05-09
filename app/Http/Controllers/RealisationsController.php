@@ -60,7 +60,7 @@ class RealisationsController extends Controller
             if($realisations->id_utilisateur == $id)
                 $exist = true;
         }
-        if($exist == false){
+        if(!$exist){
             return view('participation');
         }
         else {

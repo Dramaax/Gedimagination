@@ -17,7 +17,7 @@ class RealisationResource extends JsonResource
       return [
            'id' => $this->id,
            'titre' => $this->titre,
-           'description' => $this->description,
+           'description' => $this->descriptif,
            'date_debut' => $this->date_debut,
            'date_fin' => $this->date_fin
        ];
