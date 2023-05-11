@@ -311,3 +311,46 @@ button.ghost {
     margin-bottom: 22%;
     
 }
+
+/******************************************/
+
+
+/****** P A G E  C L A S S E M E N T ******/
+
+
+/******************************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  td img {
+    max-width: auto;
+    max-height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
+  

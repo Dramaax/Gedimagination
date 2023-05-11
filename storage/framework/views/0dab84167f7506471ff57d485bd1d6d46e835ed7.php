@@ -6,17 +6,33 @@
     <title>Gedimagination</title>
 </head>
 <body>
-    <section class="contact-us" id="contact-section">
-        <div class="img_accueil">
-            <img src="img/btn_gedimat.png" alt=""/>
-        </div>
-    <form action="<?php echo e(url('verif')); ?>" method="get">
-    <div class="inputField btn">
-            <button type="submit" id="form-submit" class="main-gradient-button">Participer</button>
-        </div>
-        <div class="inputField-btn">
-            <button type="submit" id="form-submit" class="main-gradient-button">Voir le classement</button>
-        </div>
-    </form>
-    </section>
+    <table>
+        <thead>
+            <tr>
+            <th>Titre</th>
+            <th>Descriptif</th>
+            <th>Date de début</th>
+            <th>Date de fin</th>
+            <th>Photo</th>
+            </tr>
+        </thead>
+    <tbody>
+        <?php
+        // Récupérer les réalisations de la base de données
+        $realisations = DB::table('realisations')->get();
+        foreach ($realisations as $realisation) {
+        ?>
+            <tr>
+            <td><?php echo $realisation->titre; ?></td>
+            <td><?php echo $realisation->descriptif; ?></td>
+            <td><?php echo date('d/m/Y', strtotime($realisation->dateDebut)); ?></td>
+            <td><?php echo date('d/m/Y', strtotime($realisation->dateFin)); ?></td>
+            <td><?php echo $realisation->photo; ?></td>
+            <td><img src="<?php echo e(asset('assets/PhotoReal/' . $realisation->photo)); ?>" witdh="600" height="auto"></td>
+            </tr>
+        <?php
+        }
+        ?>
+    </tbody>
+    </table>
 </body><?php /**PATH C:\laragon\www\Gedimagination\resources\views/classement.blade.php ENDPATH**/ ?>

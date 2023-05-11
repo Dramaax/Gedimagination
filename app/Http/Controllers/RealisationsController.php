@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\realisations;
 use App\Http\Requests\RealisationsRequest;
+use DB;
 
 class RealisationsController extends Controller
 {
@@ -36,8 +37,8 @@ class RealisationsController extends Controller
             if($request->file('photo')){
             $file= $request->file('photo');
             //Chemin d'accès a l'image
-            $filename= 'www/gedimagination/public/image/'.$id.$file->getClientOriginalName();
-            $file-> move(public_path('image'), $filename);
+            $filename= $id.$file->getClientOriginalName();
+            $file-> move(public_path('assets/PhotoReal'), $filename);
             $realisations['photo']=$filename;
             }
             
@@ -68,4 +69,28 @@ class RealisationsController extends Controller
         }
 
     }
+
+    public function classement()
+    {
+
+        $realisations = realisations::select(
+
+                'titre', 
+
+                'descriptif', 
+
+                'dateDebut', 
+
+                'dateFin', 
+
+                'photo', 
+
+                DB::raw("")
+
+        );
+
+        return view('classement');
+
+    }
+
 }
