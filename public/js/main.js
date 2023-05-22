@@ -16,11 +16,14 @@ $(this).ready(function() {
                 url: $(this).attr("action"),
                 method: $(this).attr("method"),
                 data: formData, // Utilisez l'objet FormData comme données de la requête
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
                 processData: false, // Empêche jQuery de traiter les données
                 contentType: false, // Empêche jQuery de définir automatiquement le type de contenu
                 success: function(response) {
                     // Gérer la réponse du serveur
-                    window.location.href = "http://localhost:8000/traitement";
+                    window.location.href = "traitement";
                 },
                 error: function(xhr, status, error) {
                     // Gérer les erreurs de requête

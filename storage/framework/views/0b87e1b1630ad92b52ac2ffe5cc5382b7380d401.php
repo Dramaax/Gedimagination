@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css” rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +15,7 @@
         <!-- Formulaire d'inscription -->
         <section class="contact-us" id="contact-section">
             <form id="contact" action="<?php echo e(url('participation')); ?>" method="post" enctype="multipart/form-data">
-                <?php echo e(csrf_field()); ?>
-
+                <?php echo csrf_field(); ?>
             
                 <div class="section-heading">
                     <img src="img/btn_gedimat.png" alt=""/>
@@ -52,5 +52,8 @@
 
             </form>
         </section>
+        <script src="<?php echo e(asset('https://code.jquery.com/jquery-3.6.0.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('../js/main.js')); ?>"></script>
+
     </body>
 </html><?php /**PATH C:\laragon\www\Gedimagination\resources\views/participation.blade.php ENDPATH**/ ?>
