@@ -13,8 +13,9 @@
     <body>
         <!-- Formulaire d'inscription -->
         <section class="contact-us" id="contact-section">
-            <form id="contact" action="{{ url('participation') }}" method="post" enctype="multipart/form-data">
-                {{ csrf_field() }}
+            <form id="contact" action="<?php echo e(url('participation')); ?>" method="post" enctype="multipart/form-data">
+                <?php echo e(csrf_field()); ?>
+
             
                 <div class="section-heading">
                     <img src="img/btn_gedimat.png" alt=""/>
@@ -53,4 +54,4 @@
         </section>
         <script type="" scr="../js/main.js"></script>
     </body>
-</html>
+</html><?php /**PATH D:\laragon\www\Gedimagination\resources\views/participation.blade.php ENDPATH**/ ?>
