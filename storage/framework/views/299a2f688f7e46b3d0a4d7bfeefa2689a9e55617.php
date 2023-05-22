@@ -52,7 +52,8 @@
 
             </form>
         </section>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script scr="../js/main.js"></script>
+        <script src="<?php echo e(asset('https://code.jquery.com/jquery-3.6.0.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('../js/main.js')); ?>"></script>
+
     </body>
 </html><?php /**PATH D:\laragon\www\Gedimagination\resources\views/participation.blade.php ENDPATH**/ ?>
